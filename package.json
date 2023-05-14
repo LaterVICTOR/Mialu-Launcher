@@ -1,0 +1,37 @@
+{
+    "name": "OniGameStudio",
+    "preductname": "OniGameStudio",   
+    "version": "1.0.5",
+    "description": "OniGameStudio",
+    "main": "src/app.js",
+    "author": "LaterVICTOR",
+    "url": "https://launcheroni.000webhostapp.com/betatest/",
+    "engines": {
+        "node": "^18.x.x"
+    },
+    "scripts": {
+        "start": "cross-env-shell NODE_ENV=dev electron .",
+        "build": "node build.js",
+        "dev": "nodemon --exec npm start"
+    },
+    "license": "CC0",
+    "nodemonConfig": {
+        "ext": "js,html,css"
+    },
+    "dependencies": {
+        "discord-rpc": "^4.0.1",
+        "electron-updater": "^5.0.1",
+        "minecraft-java-core": "^3.1.1",
+        "node-fetch": "^2.6.7"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "electron": "^20.0.0",
+        "electron-builder": "^23.0.3",
+        "nodemon": "^2.0.16"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LaterVICTOR/OniLaucherExtre.git"
+    }
+}
