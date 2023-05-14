@@ -2,31 +2,28 @@
 const electron = require("electron");
 const path = require("path");
 const os = require("os");
-const pkg = require("../../../../package.json");
-let mainWindow = undefined;
+let updateWindow = undefined;
 
 function getWindow() {
-    return mainWindow;
+    return updateWindow;
 }
 
 function destroyWindow() {
-    if (!mainWindow) return;
-    mainWindow.close();
-    mainWindow = undefined;
+    if (!updateWindow) return;
+    updateWindow.close();
+    updateWindow = undefined;
 }
 
 function createWindow() {
     destroyWindow();
-    mainWindow = new electron.BrowserWindow({
-        title: pkg.preductname,
-        width: 1000,
-        height: 720,
-        minWidth: 980,
-        minHeight: 552,
+    updateWindow = new electron.BrowserWindow({
+        title: "Actualización",
+        width: 400,
+        height: 500,
         resizable: false,
         icon: `./src/assets/images/icon.${os.platform() === "win32" ? "ico" : "png"}`,
         transparent: os.platform() === 'win32',
-        frame: os.platform() !== 'win32',
+        frame: false,
         show: false,
         webPreferences: {
             contextIsolation: false,
@@ -34,11 +31,11 @@ function createWindow() {
         },
     });
     electron.Menu.setApplicationMenu(null);
-    mainWindow.setMenuBarVisibility(false);
-    mainWindow.loadFile(path.join(electron.app.getAppPath(), 'src', 'launcher.html'));
-    mainWindow.once('ready-to-show', () => {
-        if (mainWindow) {
-            mainWindow.show();
+    updateWindow.setMenuBarVisibility(false);
+    updateWindow.loadFile(path.join(electron.app.getAppPath(), 'src', 'index.html'));
+    updateWindow.once('ready-to-show', () => {
+        if (updateWindow) {
+            updateWindow.show();
         }
     });
 }

@@ -37,7 +37,7 @@ class Splash {
 
     async checkUpdate() {
         if (dev) return this.startLauncher();
-        this.setStatus(`Buscando actualización..`);
+        this.setStatus(`Buscando actualización`);
 
         ipcRenderer.invoke('update-app').then(err => {
             if (err.error) {
