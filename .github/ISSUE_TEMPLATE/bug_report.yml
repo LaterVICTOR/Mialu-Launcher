@@ -1,71 +1,72 @@
-name: Signaler un bug
-description: Vous avez rencontré un bug? Signalez-le ici
+name: Reportar un error
+description: ¿Has encontrado un error? Repórtalo aquí
 title: "[Bug] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
      value: |
-      Un grand merci d'avance pour votre aide. Néanmoins, nous avons besoin d'un certain nombre d'informations, pour nous aider.
+Muchas gracias por tu ayuda. Sin embargo, necesitamos una cierta cantidad de información para ayudarnos.
   - type: checkboxes
     attributes:
-      label: "Liste des vérifications à faire avant de valider l'ouverture du signalement de bug"
-      description: Assurez que vous avez complété ce qui suit, dans le cas contraire, votre rapport peut être refusé
+      label: "Lista de comprobaciones a realizar antes de validar la apertura del informe de error"
+      description:Asegúrese de haber completado lo siguiente, de lo contrario su informe puede ser rechazado
       options:
-        - label: J'ai réussi à reproduire le bug sur le Selvania Launcher (sans mes modifications)
+        - label: Logré reproducir el error en Oni Studio Launcher Beta Test (sin mis modificaciones)
           required: true
-        - label: Mon code respecte la licence Creative Commons Zero v1.0 Universal
+        - label: Mi código respeta la Licencia Universal Creative Commons Zero v1.0
           required: true
-        - label: Mon code respecte les conditions d'utilisation du Selvania Launcher
+        - label: Mi código cumple con los términos de uso de Oni Studio Beta Test
           required: true
-        - label: J'arrive à reproduire le bug sur la dernière version du Selvania Launcher
+        - label: Logré reproducir el error en la última versión de Oni Studio Launcher Beta Test
           required: true
   - type: dropdown
     attributes:
-      label: Système d'exploitation
+      label: Sistema operativo
       options:
         - Windows
         - macOS
-        - Linux (Basé sur Debian/Ubuntu)
-        - Linux (Autres)
+        - Linux (Basado en Debian/Ubuntu)
+        - Linux (Otros)
     validations:
       required: true
   - type: input
     attributes:
-      label: Version du système d'exploitation
-      placeholder: "Exemple: Windows 11 Professionnel 21H2 Build 22000.739"
+      label: Versión del sistema operativo
+      placeholder: "Ejemplo: Windows 11 Professional 21H2 compilación 22000.739"
     validations:
         required: true
   - type: input
     attributes:
-      label: Hash du commit sur lequel le bug est rencontré
+      label: Hash de la confirmación en la que se encuentra el error
       placeholder: 84d7881b67ecf6088205eca6723bfb19bf2a5f0d
   - type: textarea
     attributes:
-      label: Comportement attendu
-      description: Une description de ce qui devrait se passer
-      placeholder: Le launcher devrait...
+      label: Comportamiento esperado
+      description: Una descripción de lo que debería suceder.
+      placeholder: El launcher debe...
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Comportement actuel
-      description: Une description de ce qui se passe avec le bug
+      label: Comportamiento actual
+      description: Una descripción de lo que está sucediendo con el error.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Instructions pour reproduire le but
+      label: Instrucciones para replicar el objetivo.
       placeholder: |
-        1. Ouvrir le launcher
-        2. Aller dans le menu xyz
-        3. Cliquer sur abc
-        4. Observer
+
+        1. Abre el lanzador
+        2. Vaya al menú xyz
+        3. Haga clic en abc
+        4. Observa
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Notes additionnelles
-      placeholder: Détails supplémentaires concernant le bug, tout ce qui pourrait être utile
+      label: Notas adicionales
+      placeholder: Detalles adicionales de errores, cualquier cosa que pueda ser útil
     validations:
       required: false
