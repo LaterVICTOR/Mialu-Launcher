@@ -1,75 +1,71 @@
-name: Informar un error
-description: ¿Has encontrado un error? Informarlo aquí
-title: "[Bug]"
-labels: ["Bug"]
+traducime todo lo que esta en frases a español name: Signaler un bug
+description: Vous avez rencontré un bug? Signalez-le ici
+title: "[Bug] "
+labels: ["bug"]
 body:
-
-- type: markdown
-attributes:
-value: |
-Muchas gracias de antemano por tu ayuda. Sin embargo, necesitamos cierta información para poder ayudarte.
-- type: checkboxes
-attributes:
-label: "Lista de verificaciones antes de confirmar la presentación del informe de error"
-description: Asegúrate de completar lo siguiente, de lo contrario, tu informe puede ser rechazado
-options:
-- label: He logrado reproducir el error en Oni Studio Launcher Betatest (sin mis modificaciones)
-required: true
-- label: Mi código cumple con la licencia Creative Commons Zero v1.0 Universal
-required: true
-- label: Mi código cumple con las condiciones de uso de Oni Studio Launcher Betatest
-required: true
-- label: Puedo reproducir el error en la última versión de Oni Studio Launcher Betatest
-required: true
-- type: dropdown
-attributes:
-label: Sistema operativo
-options:
-- Windows
-- macOS
-- Linux (Basado en Debian/Ubuntu)
-- Linux (Otros)
-validations:
-required: true
-- type: input
-attributes:
-label: Versión del sistema operativo
-placeholder: "Ejemplo: Windows 11 Profesional 21H2 Build 22000.739"
-validations:
-required: true
-- type: input
-attributes:
-label: Hash del commit donde se encuentra el error
-placeholder: 84d7881b67ecf6088205eca6723bfb19bf2a5f0d
-- type: textarea
-attributes:
-label: Comportamiento esperado
-description: Una descripción de lo que debería suceder
-placeholder: El lanzador debería...
-validations:
-required: true
-- type: textarea
-attributes:
-label: Comportamiento actual
-description: Una descripción de lo que sucede con el error
-validations:
-required: true
-- type: textarea
-attributes:
-label: Instrucciones para reproducir el error
-placeholder: |
-1. Abrir el lanzador
-2. Ir al menú xyz
-3. Hacer clic en abc
-4. Observar
-validations:
-required: true
-- type: textarea
-attributes:
-label: Notas adicionales
-placeholder: Detalles adicionales sobre el error, cualquier información que pueda ser útil
-validations:
-required: false
-
-
-
+  - type: markdown
+    attributes:
+     value: |
+      Un grand merci d'avance pour votre aide. Néanmoins, nous avons besoin d'un certain nombre d'informations, pour nous aider.
+  - type: checkboxes
+    attributes:
+      label: "Liste des vérifications à faire avant de valider l'ouverture du signalement de bug"
+      description: Assurez que vous avez complété ce qui suit, dans le cas contraire, votre rapport peut être refusé
+      options:
+        - label: J'ai réussi à reproduire le bug sur le Selvania Launcher (sans mes modifications)
+          required: true
+        - label: Mon code respecte la licence Creative Commons Zero v1.0 Universal
+          required: true
+        - label: Mon code respecte les conditions d'utilisation du Selvania Launcher
+          required: true
+        - label: J'arrive à reproduire le bug sur la dernière version du Selvania Launcher
+          required: true
+  - type: dropdown
+    attributes:
+      label: Système d'exploitation
+      options:
+        - Windows
+        - macOS
+        - Linux (Basé sur Debian/Ubuntu)
+        - Linux (Autres)
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Version du système d'exploitation
+      placeholder: "Exemple: Windows 11 Professionnel 21H2 Build 22000.739"
+    validations:
+        required: true
+  - type: input
+    attributes:
+      label: Hash du commit sur lequel le bug est rencontré
+      placeholder: 84d7881b67ecf6088205eca6723bfb19bf2a5f0d
+  - type: textarea
+    attributes:
+      label: Comportement attendu
+      description: Une description de ce qui devrait se passer
+      placeholder: Le launcher devrait...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Comportement actuel
+      description: Une description de ce qui se passe avec le bug
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Instructions pour reproduire le but
+      placeholder: |
+        1. Ouvrir le launcher
+        2. Aller dans le menu xyz
+        3. Cliquer sur abc
+        4. Observer
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Notes additionnelles
+      placeholder: Détails supplémentaires concernant le bug, tout ce qui pourrait être utile
+    validations:
+      required: false
