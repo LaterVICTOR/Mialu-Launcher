@@ -178,6 +178,26 @@ class Settings {
             openLauncher.checked = true;
         }
 
+        closeLauncher.addEventListener("change", () => {
+            if(closeLauncher.checked) {
+                openLauncher.checked = false;
+                closeAll.checked = false;
+            }
+           if(!closeLauncher.checked) closeLauncher.checked = true;
+            settingsLauncher.launcher.close = 'close-launcher';
+            this.database.update(settingsLauncher, 'launcher');
+        })
+
+        closeAll.addEventListener("change", () => {
+            if(closeAll.checked) {
+                closeLauncher.checked = false;
+                openLauncher.checked = false;
+            }
+            if(!closeAll.checked) closeAll.checked = true;
+            settingsLauncher.launcher.close = 'close-all';
+            this.database.update(settingsLauncher, 'launcher');
+        })
+
         openLauncher.addEventListener("change", () => {
             if(openLauncher.checked) {
                 closeLauncher.checked = false;
