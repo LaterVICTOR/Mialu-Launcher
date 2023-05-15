@@ -7,13 +7,11 @@ const clientId = '1081676813098569809';
  async function setActivity() {
     if (!RPC) return;
     RPC.setActivity({
-        details: `Jugando a 'Squids Games Betatest'`,
+        details: `Jugando a 'Betatest'`,
         state: `Con el Launcher`,
         startTimestamp: Date.now(),
-        smallImageKey: 'icon',
-        smallImageText: 'Oni Game Studio',
-        largeImageKey: 'logo',
-        largeImageText: 'SquidsGames',
+        largeImageKey: 'icon',
+        largeImageText: 'OniGameStudio',
         instance: false,
     });
  };
