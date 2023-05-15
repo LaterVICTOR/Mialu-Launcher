@@ -2,7 +2,7 @@ const builder = require('electron-builder')
 const { preductname } = require('./package.json')
 
 
-builder.build({.
+builder.build({
     config: {
         generateUpdatesFilesForAllChannels: true,
         appId: preductname,
