@@ -4,7 +4,7 @@ title: "[Error] "
 labels: ["error"]
 body:
 
-type: markdown
+- type: markdown
 attributes:
 value: |
 Muchas gracias de antemano por tu ayuda. Sin embargo, necesitamos cierta información para poder ayudarte.
