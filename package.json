@@ -5,7 +5,7 @@
     "description": "OniGameStudio",
     "main": "src/app.js",
     "author": "LaterVICTOR",
-    "url": "http://45.235.98.192:8090/fivealive/",
+    "url": "http://45.235.98.192:8090/betatest",
     "engines": {
         "node": "^18.x.x"
     },
