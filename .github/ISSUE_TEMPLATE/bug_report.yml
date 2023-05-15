@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
      value: |
-Muchas gracias por tu ayuda. Sin embargo, necesitamos una cierta cantidad de información para ayudarnos.
+     Muchas gracias por tu ayuda. Sin embargo, necesitamos una cierta cantidad de información para ayudarnos.
   - type: checkboxes
     attributes:
       label: "Lista de comprobaciones a realizar antes de validar la apertura del informe de error"
