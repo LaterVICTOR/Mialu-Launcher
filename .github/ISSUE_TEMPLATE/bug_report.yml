@@ -1,7 +1,7 @@
 name: Informar un error
 description: ¿Has encontrado un error? Informarlo aquí
-title: "[Error] "
-labels: ["error"]
+title: "[Bug]"
+labels: ["Bug"]
 body:
 
 - type: markdown
