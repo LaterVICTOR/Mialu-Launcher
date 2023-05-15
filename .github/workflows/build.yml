@@ -55,4 +55,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.github_token }}
         run: npm run build
-        shell: bash
+        shell: bas
