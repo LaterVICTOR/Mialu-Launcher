@@ -14,7 +14,7 @@
     top: 15px;
     width: 60px;
     height: 45px;
-    left: 31%;
+    left: 34%;
     border: currentColor;
     background-image: url("../../images/default/setve.png");
     background-size: cover;
@@ -36,7 +36,7 @@
     top: 15px;
     width: 60px;
     height: 45px;
-    left: 57%;
+    left: 60%;
     border: currentColor;
     font: normal normal bold 50px/50px Poppins;
     border-radius: 0px 50px 50px 0px;
@@ -58,7 +58,7 @@
 .play-element {
     top: null;
     position: absolute;
-    left: 47%;
+    left: 50%;
     transform: translate(-50%);
     height: 100%;
     color: #F1F1F1;

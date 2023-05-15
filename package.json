@@ -1,7 +1,7 @@
 {
     "name": "OniGameStudio",
     "preductname": "OniGameStudio",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "OniGameStudio",
     "main": "src/app.js",
     "author": "LaterVICTOR",
