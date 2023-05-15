@@ -8,7 +8,7 @@ body:
 attributes:
 value: |
 Muchas gracias de antemano por tu ayuda. Sin embargo, necesitamos cierta información para poder ayudarte.
-type: checkboxes
+- type: checkboxes
 attributes:
 label: "Lista de verificaciones antes de confirmar la presentación del informe de error"
 description: Asegúrate de completar lo siguiente, de lo contrario, tu informe puede ser rechazado
@@ -21,7 +21,7 @@ required: true
 required: true
 - label: Puedo reproducir el error en la última versión de Oni Studio Launcher Betatest
 required: true
-type: dropdown
+- type: dropdown
 attributes:
 label: Sistema operativo
 options:
@@ -31,30 +31,30 @@ options:
 - Linux (Otros)
 validations:
 required: true
-type: input
+- type: input
 attributes:
 label: Versión del sistema operativo
 placeholder: "Ejemplo: Windows 11 Profesional 21H2 Build 22000.739"
 validations:
 required: true
-type: input
+- type: input
 attributes:
 label: Hash del commit donde se encuentra el error
 placeholder: 84d7881b67ecf6088205eca6723bfb19bf2a5f0d
-type: textarea
+- type: textarea
 attributes:
 label: Comportamiento esperado
 description: Una descripción de lo que debería suceder
 placeholder: El lanzador debería...
 validations:
 required: true
-type: textarea
+- type: textarea
 attributes:
 label: Comportamiento actual
 description: Una descripción de lo que sucede con el error
 validations:
 required: true
-type: textarea
+- type: textarea
 attributes:
 label: Instrucciones para reproducir el error
 placeholder: |
@@ -64,7 +64,7 @@ placeholder: |
 4. Observar
 validations:
 required: true
-type: textarea
+- type: textarea
 attributes:
 label: Notas adicionales
 placeholder: Detalles adicionales sobre el error, cualquier información que pueda ser útil
