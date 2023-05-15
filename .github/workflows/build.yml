@@ -1,4 +1,5 @@
 name: Launcher Build
+
 on:
   push:
     branches: [ master ]
@@ -55,4 +56,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.MI_PAT }}
         run: npm run build
         shell: bash
-        
+
+      - name: Debug
+        env:
+          GITHUB_TOKEN: ${{ secrets.MI_PAT }}
+        run: echo "${{ secrets.MI_PAT }}" > /tmp/token && cat /tmp/token
