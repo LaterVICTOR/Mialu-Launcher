@@ -1,4 +1,4 @@
-const clientId = '1081676813098569809';
+const clientId = '1077377832075919450';
  const DiscordRPC = require('discord-rpc');
  const RPC = new DiscordRPC.Client({ transport: 'ipc'});
  
@@ -7,7 +7,7 @@ const clientId = '1081676813098569809';
  async function setActivity() {
     if (!RPC) return;
     RPC.setActivity({
-        details: `Jugando a 'Betatest'`,
+        details: `Jugando a 'Beta Test'`,
         state: `Con el Launcher`,
         startTimestamp: Date.now(),
         largeImageKey: 'icon',
