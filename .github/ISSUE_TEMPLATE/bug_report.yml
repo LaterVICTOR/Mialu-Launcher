@@ -1,3 +1,4 @@
+name: Signaler un bug
 description: Vous avez rencontré un bug? Signalez-le ici
 title: "[Bug] "
 labels: ["bug"]
