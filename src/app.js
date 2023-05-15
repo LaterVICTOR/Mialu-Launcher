@@ -1,4 +1,4 @@
-const clientId = '1107704494764085309';
+const clientId = '1077377832075919450';
  const DiscordRPC = require('discord-rpc');
  const RPC = new DiscordRPC.Client({ transport: 'ipc'});
  
