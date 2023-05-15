@@ -1,5 +1,5 @@
-# module du helios launcher
 name: Launcher Build
+
 on:
   push:
     branches: [ master ]
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Get version
         run: echo "version=$(jq -r .version package.json)" >> $GITHUB_ENV
@@ -35,7 +35,7 @@ jobs:
 
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
 
       - name: Set up Node
         uses: actions/setup-node@v3
@@ -43,7 +43,7 @@ jobs:
           node-version: 16.x
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v2
         with:
           python-version: 3.x
 
@@ -56,3 +56,4 @@ jobs:
           GH_TOKEN: ${{ secrets.github_token }}
         run: npm run build
         shell: bash
+        
