@@ -16,11 +16,12 @@
     height: 45px;
     left: 34%;
     border: currentColor;
-    background-image: url("../../images/default/setve.png");
+    background-color: #80808027;
+    transition: 0.2s;
+    background-image: url("../../images/default/person.png") !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: transparent;
     border-radius: 50px 0px 0px 50px;
     box-shadow: 0 0 0 1px #F1F1F1;
 }
@@ -28,6 +29,17 @@
 .player-head:hover {
     top: -2px;
     height: 60;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.action:after {
+    top: -2px;
+    height: 60;
+    background-image: url("../../images/default/setve.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
     border-radius: 0px 0px 0px 0px;
 }
 
