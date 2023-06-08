@@ -44,5 +44,16 @@ function accountSelect(uuid) {
 }
 
 function headplayer(pseudo) {
-    document.querySelector(".player-head").style.backgroundImage = `url(https://minotar.net/helm/${pseudo}/100)`;
+    let action = document.querySelector(".action");
+    let playerHead = document.querySelector(".player-head");
+
+    playerHead.addEventListener("mouseover", function() {
+        this.style.setProperty("background-image", `url(https://minotar.net/helm/${pseudo}/100)`, "important");
+    });
+
+    playerHead.addEventListener("mouseout", function() {
+        this.style.removeProperty("background-image");
+    });
+
+    action.style.setProperty("background-image", `url(https://minotar.net/helm/${pseudo}/100)`, "important");
 }

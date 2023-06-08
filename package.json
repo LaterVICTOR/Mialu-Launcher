@@ -1,7 +1,7 @@
 {
     "name": "OniGameStudio",
     "preductname": "OniGameStudio",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "OniGameStudio",
     "main": "src/app.js",
     "author": "LaterVICTOR",
@@ -21,7 +21,7 @@
     "dependencies": {
         "discord-rpc": "^4.0.1",
         "electron-updater": "^5.0.1",
-        "minecraft-java-core": "^3.4.4",
+        "minecraft-java-core": "^3.5.2",
         "node-fetch": "^2.6.7"
     },
     "devDependencies": {
