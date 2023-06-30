@@ -110,16 +110,19 @@
 .text-download,
 .progress-bar {
     position: absolute;
-    top: 50%;
+    top: 50.7%;
     display: none;
     box-shadow: 0 0 0 1px #00000000;
 }
 
 .text-download {
+    top: 26%;
     position: absolute;
-    top: 20px;
-    left: 55px;
-    font-size: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    color: #F1F1F1;
+    font: normal normal bold 19px/29px Poppins;
     text-align: center;
 }
 
@@ -136,7 +139,7 @@
 
 .progress-bar::-webkit-progress-value {
     background-color: #fffefe;
-    border-radius: 2px;
+    border-radius: 1px;
 }
 
 .body-home {
