@@ -54,6 +54,5 @@ function headplayer(pseudo) {
     playerHead.addEventListener("mouseout", function() {
         this.style.removeProperty("background-image");
     });
-
-    action.style.setProperty("background-image", `url(https://minotar.net/helm/${pseudo}/100)`, "important");
+    
 }

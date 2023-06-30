@@ -116,13 +116,13 @@
 }
 
 .text-download {
-    top: 26%;
+    top: 35%;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
     height: 100%;
     color: #F1F1F1;
-    font: normal normal bold 19px/29px Poppins;
+    font: normal normal bold 15px/15px Poppins;
     text-align: center;
 }
 

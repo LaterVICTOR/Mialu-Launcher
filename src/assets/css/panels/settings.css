@@ -5,7 +5,7 @@
     height: 70px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    background: #00000080;
+    background: #FFFFFF80;
     display: flex;
     justify-content: center;
 }
@@ -108,10 +108,10 @@
     border: none;
     border-radius: 15px;
     font: normal normal bold 30px/40px Poppins;
-    color: #D1D1D1;
-    background-color: #303030;
-    box-shadow: 1px 2px 5px #585858;
-    margin: 20px 0;
+    color: #ebebeb;
+    background-color: #e0e0e0;
+    box-shadow: 1px 2px 5px #b4b4b4;
+    margin: 40px 0;
     margin-bottom: 10px;
 }
 
@@ -172,8 +172,8 @@
     margin: -60px 415px;
     color: #f73434;
     font-size: 50px;
-    background: #353535c7;
-    box-shadow: 0 0 5px #353535c7;
+    background: #bbbbbbc7;
+    box-shadow: 0 0 5px #bbbbbbc7;
     width: 65px;
     height: 65px;
     border-radius: 100%;
@@ -207,7 +207,7 @@
  ******************************************************************************/
 
 .java-settings {
-    background: #363636cc;
+    background: #a7a7a744;
     border-radius: 20px;
     width: 90%;
     margin: 0 auto;
@@ -237,8 +237,8 @@
     display: block;
     width: 20px;
     height: 10px;
-    background: #d41870;
-    border: 4px solid #ff0479;
+    background: #ffb24e;
+    border: 4px solid #f19720;
     transition: background-color .2s, border .2s;
     border-radius: 18px;
     cursor: pointer;
@@ -247,7 +247,7 @@
 .slider-touch-left span:after,
 .slider-touch-right span:after {
     content: attr(value);
-    color: #ff0479;
+    color: #c06e02;
     font: normal normal bold 12px/18px Poppins;
     white-space: nowrap;
     pointer-events: none;
@@ -275,7 +275,7 @@
     display: block;
     height: 100%;
     width: 0%;
-    background: #ff0479;
+    background: #ffb24e;
     transition: background-color .2s;
 }
 
@@ -294,7 +294,7 @@
     margin: 0 40px;
     margin-top: 2%;
     color: #F1F1F1F1;
-    background-color: #1f1f1f;
+    background-color: #ffb24e;
     user-select: text;
     transition: color .2s, background-color .2s;
     border: none;
@@ -462,7 +462,7 @@
 }
 
 .checkbox-settings:checked+label {
-    background-color: #ff0479;
+    background-color: #ffb24e;
 }
 
 .checkround {
