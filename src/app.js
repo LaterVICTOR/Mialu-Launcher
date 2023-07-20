@@ -1,20 +1,35 @@
-const clientId = '1077377832075919450';
- const DiscordRPC = require('discord-rpc');
- const RPC = new DiscordRPC.Client({ transport: 'ipc'});
- 
- DiscordRPC.register(clientId);
+const axios = require('axios');
+const DiscordRPC = require('discord-rpc');
+const RPC = new DiscordRPC.Client({ transport: 'ipc' });
 
- async function setActivity() {
-    if (!RPC) return;
-    RPC.setActivity({
-        details: `Jugando a 'Beta Test'`,
-        state: `Con el Launcher`,
-        startTimestamp: Date.now(),
-        largeImageKey: 'icon',
-        largeImageText: 'OniGameStudio',
-        instance: false,
-    });
- };
+const clientId = '1077377832075919450';
+const pageUrl = 'http://45.235.98.192:8090/betatest/test.php'; // Reemplaza esta URL con la dirección de la página PHP que contiene el texto en formato JSON para el estado del juego.
+
+DiscordRPC.register(clientId);
+
+async function setActivity() {
+    try {
+        // Realiza una solicitud HTTP para obtener el contenido de la página PHP en formato JSON.
+        const response = await axios.get(pageUrl);
+
+        // Extrae el texto personalizado para el estado del juego desde la respuesta de la página PHP.
+        const newText = response.data[0];
+
+        // Actualiza el estado del juego con el nuevo texto obtenido.
+        if (RPC) {
+            RPC.setActivity({
+                details: `Jugando a '${newText}'`,
+                state: `Con el Launcher`,
+                startTimestamp: Date.now(),
+                largeImageKey: 'icon',
+                largeImageText: 'OniGameStudio',
+                instance: false,
+            });
+        }
+    } catch (error) {
+        console.error('Error al obtener el texto desde la página PHP:', error.message);
+    }
+}
 
 RPC.on('ready', async () => {
     setActivity();
@@ -23,7 +38,6 @@ RPC.on('ready', async () => {
         setActivity();
     }, 86400 * 1000);
 });
-
 
 RPC.login({ clientId }).catch(err => console.error(err));
 const { app, ipcMain } = require('electron');
