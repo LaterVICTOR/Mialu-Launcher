@@ -19,6 +19,7 @@
         "ext": "js,html,css"
     },
     "dependencies": {
+        "axios": "^1.4.0",
         "discord-rpc": "^4.0.1",
         "electron-updater": "^5.0.1",
         "minecraft-java-core": "^3.5.7",
