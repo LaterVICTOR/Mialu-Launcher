@@ -1,4 +1,3 @@
-const axios = require('axios');
 const DiscordRPC = require('discord-rpc');
 const RPC = new DiscordRPC.Client({ transport: 'ipc' });
 
