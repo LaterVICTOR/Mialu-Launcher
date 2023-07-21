@@ -19,10 +19,10 @@ function createWindow() {
     destroyWindow();
     mainWindow = new electron.BrowserWindow({
         title: pkg.preductname,
-        width: 1000,
-        height: 720,
-        minWidth: 980,
-        minHeight: 552,
+        width: 1200,
+        height: 700,
+        minWidth: 1000,
+        minHeight: 500,
         resizable: false,
         icon: `./src/assets/images/icon.${os.platform() === "win32" ? "ico" : "png"}`,
         transparent: os.platform() === 'win32',

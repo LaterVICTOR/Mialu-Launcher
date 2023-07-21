@@ -14,7 +14,7 @@
     top: 15px;
     width: 60px;
     height: 45px;
-    left: 34.5%;
+    left: 37%;
     border: currentColor;
     background-color: #80808027;
     transition: 0.2s;
@@ -48,10 +48,10 @@
     top: 15px;
     width: 60px;
     height: 45px;
-    left: 60.5%;
+    left: 58.8%;
     border: currentColor;
     font: normal normal bold 50px/50px Poppins;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 0px 25px 25px 0px;
     box-shadow: 0 0 0 1px #F1F1F1;
     color: #F1F1F1;
     background: #80808027;
@@ -70,7 +70,7 @@
 .play-element {
     top: null;
     position: absolute;
-    left: 50.5%;
+    left: 50.4%;
     transform: translate(-50%);
     height: 100%;
     color: #F1F1F1;
