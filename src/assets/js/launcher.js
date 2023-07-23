@@ -10,6 +10,7 @@ import Login from './panels/login.js';
 import Home from './panels/home.js';
 import Settings from './panels/settings.js';
 
+
 class Launcher {
     async init() {
         this.initLog();

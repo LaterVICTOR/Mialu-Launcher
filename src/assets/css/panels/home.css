@@ -31,17 +31,15 @@
     height: 54px;
     width: 54px;
     border-radius: 0px 0px 0px 0px;
+    box-shadow: 0 0 0 1px #00000000;
 }
-
-.action:after {
+.player-head:after {
     top: -2px;
-    height: 60;
+    height: 100px;
+    width: 100px;
     background-image: url("../../images/default/setve.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
     border-radius: 0px 0px 0px 0px;
+    box-shadow: 0 0 0 0px;
 }
 
 .settings-btn {
