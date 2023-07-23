@@ -17,7 +17,7 @@ img {
   height: 100%;
   background-color: #b17c4b;
   border-radius: 20px;
-  background-image: url(../images/background/betatest.png);
+  background-image: url("http://45.235.98.192:8090/betatest/fondo.png");
   background-repeat: no-repeat;
   background-size: 400px 250px;
 }

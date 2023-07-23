@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     user-select: none;
-    background: linear-gradient(#00000000, #00000000), url("../images/background/betatest.png") #b17c4b no-repeat center center scroll;
+    background: linear-gradient(#00000000, #00000000), url("http://45.235.98.192:8090/betatest/fondo.png") #b17c4b no-repeat center center scroll;
 }
 
 img {   

@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 70px;
+    height: 76;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: #00000000;
@@ -12,9 +12,9 @@
 .player-head {
     position: absolute;
     top: 15px;
-    width: 60px;
-    height: 45px;
-    left: 37%;
+    width: 54px;
+    height: 49px;
+    left: 35%;
     border: currentColor;
     background-color: #80808027;
     transition: 0.2s;
@@ -22,13 +22,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 16px 0px 0px 16px;
     box-shadow: 0 0 0 1px #F1F1F1;
 }
 
 .player-head:hover {
     top: -2px;
-    height: 60;
+    height: 54px;
+    width: 54px;
     border-radius: 0px 0px 0px 0px;
 }
 
@@ -46,12 +47,12 @@
 .settings-btn {
     position: absolute;
     top: 15px;
-    width: 60px;
-    height: 45px;
-    left: 58.8%;
+    width: 54px;
+    height: 49px;
+    left: 60.5%;
     border: currentColor;
     font: normal normal bold 50px/50px Poppins;
-    border-radius: 0px 25px 25px 0px;
+    border-radius: 0px 16px 16px 0px;
     box-shadow: 0 0 0 1px #F1F1F1;
     color: #F1F1F1;
     background: #80808027;
@@ -70,7 +71,7 @@
 .play-element {
     top: null;
     position: absolute;
-    left: 50.4%;
+    left: 50%;
     transform: translate(-50%);
     height: 100%;
     color: #F1F1F1;
@@ -80,8 +81,8 @@
 
 .play-btn {
     top: 10px;
-    width: 200px;
-    height: 45px;
+    width: 250px;
+    height: 49px;
     border-radius: 0px 0px 0px 0px;
     border: currentColor;
     background: #80808027;
@@ -96,8 +97,8 @@
 
 .download-content {
     top: 10px;
-    width: 200px;
-    height: 45px;
+    width: 250px;
+    height: 49px;
     border-radius: 0px;
     border: currentColor;
     background: #80808027;
@@ -129,6 +130,7 @@
 .progress-bar {
     background-color: transparent;
     height: 6px;
+    width: 250px;
 
 }
 
