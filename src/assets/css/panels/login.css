@@ -11,13 +11,13 @@ h4{
 .login-card {
     position: absolute;
     top: 52%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
     width: 20%;
-    background: #12121262;
+    background: #00000000;
     padding: 60px;
     font: normal normal bold 19px/29px Poppins;
-    color: #E1E1E1;
+    color: #000000;
     border-radius: 15px;
     text-align: center;
 }
@@ -58,10 +58,10 @@ h4{
 .login-card-mojang {
     position: absolute;
     top: 52%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
     width: 35%;
-    background: #12121262;
+    background: #00000000;
     padding: 0 20px;
     font: normal normal bold 19px/29px Poppins;
     color: #E1E1E1;

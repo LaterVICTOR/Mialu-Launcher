@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 76;
+    height: 78;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: #00000000;
@@ -13,7 +13,7 @@
     position: absolute;
     top: 15px;
     width: 54px;
-    height: 49px;
+    height: 51px;
     left: 35%;
     border: currentColor;
     background-color: #80808027;
@@ -46,7 +46,7 @@
     position: absolute;
     top: 15px;
     width: 54px;
-    height: 49px;
+    height: 51px;
     left: 60.5%;
     border: currentColor;
     font: normal normal bold 50px/50px Poppins;
@@ -80,7 +80,7 @@
 .play-btn {
     top: 10px;
     width: 250px;
-    height: 49px;
+    height: 51px;
     border-radius: 0px 0px 0px 0px;
     border: currentColor;
     background: #80808027;
@@ -96,7 +96,7 @@
 .download-content {
     top: 10px;
     width: 250px;
-    height: 49px;
+    height: 51px;
     border-radius: 0px;
     border: currentColor;
     background: #80808027;
